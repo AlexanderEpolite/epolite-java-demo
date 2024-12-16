@@ -36,6 +36,7 @@ public static void main(String[] args) throws Exception {
     EPOLITE.EPOLITEKeypair kp = EPOLITE.createEpoliteKeypair();
 
     //initial message (must be a byte array)
+    //in a production application, the secret message should never be a string
     byte[] message_to_encrypt = "Secret Message".getBytes(StandardCharsets.UTF_8);
 
     //encrypt using the public key (which is a byte[])
